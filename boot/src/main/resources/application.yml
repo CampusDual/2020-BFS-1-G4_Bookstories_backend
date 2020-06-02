@@ -62,9 +62,9 @@ server:
 spring:
    datasource:
       driver-class-name: org.hsqldb.jdbcDriver
-      jdbcUrl: jdbc:hsqldb:hsql://localhost:9013/templateDB
-      username: SA
-      password:
+      jdbcUrl: jdbc:postgresql://45.84.210.174:65432/cd04
+      username: cd04
+      password: cd04_P4$$!
       initialSize: 10
       testOnBorrow: true
    main:

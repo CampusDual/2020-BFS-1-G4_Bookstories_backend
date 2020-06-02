@@ -86,7 +86,7 @@
 							<mainClass>org.hsqldb.Server</mainClass>
 							<arguments>
 								<argument>-port</argument>
-								<argument>9013</argument>
+								<argument>9999</argument>
 								<argument>-database.0</argument>
 								<argument>${hsqldatabase.path}/templateDB</argument>
 								<argument>-dbname.0</argument>
