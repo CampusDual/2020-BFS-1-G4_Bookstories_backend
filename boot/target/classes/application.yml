@@ -61,7 +61,7 @@ server:
       mime-types: application/json, application/xml
 spring:
    datasource:
-      driver-class-name: org.hsqldb.jdbcDriver
+      driver-class-name: org.postgresql.Driver
       jdbcUrl: jdbc:postgresql://45.84.210.174:65432/cd04
       username: cd04
       password: cd04_P4$$!
