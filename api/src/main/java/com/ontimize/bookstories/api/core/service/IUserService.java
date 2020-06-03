@@ -3,9 +3,6 @@ package com.ontimize.bookstories.api.core.service;
 
 import java.util.List;
 import java.util.Map;
-
-import org.springframework.http.ResponseEntity;
-
 import com.ontimize.db.EntityResult;
 
 
