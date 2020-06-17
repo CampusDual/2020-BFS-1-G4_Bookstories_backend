@@ -7,5 +7,8 @@ import com.ontimize.jee.server.dao.jdbc.OntimizeJdbcDaoSupport;
 @Lazy
 @ConfigurationFile(configurationFile = "dao/AuthorDao.xml", configurationFilePlaceholder = "dao/placeholders.properties")
 public class AuthorDao extends OntimizeJdbcDaoSupport {
+	
+	public static final String ID = "authorID";
+	public static final String NAME = "authorName";
 
 }
