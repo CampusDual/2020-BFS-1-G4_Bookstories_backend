@@ -26,6 +26,7 @@
                   INNER JOIN ${mainschema}.BOOKS_HAS_AUTHOR AS AU ON BO.BOOK_ID = AU.BOOKS_BOOK_ID
                   INNER JOIN ${mainschema}.BOOKS_HAS_GENRES AS GE ON BO.BOOK_ID = GE.BOOKS_BOOK_ID
                   INNER JOIN ${mainschema}.USERS AS U ON AU.AUTHOR_IDAUTHOR = U.USER_ID
+                  INNER JOIN ${mainschema}.LANGUAGE AS L ON BO.LANGUAGE_IDLANGUAGE = L.IDLANGUAGE
                #WHERE#
                #ORDER#
             ]]>
