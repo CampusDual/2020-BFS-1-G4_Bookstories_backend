@@ -13,7 +13,7 @@ import com.ontimize.jee.server.dao.jdbc.OntimizeJdbcDaoSupport;
 	configurationFilePlaceholder = "dao/placeholders.properties")
 public class BookDao extends OntimizeJdbcDaoSupport {
 
-	public static final String ID = "bookID";
-	public static final String TITLE = "bookTitle";
-	
+	public static final String BOOK_ID = "book_ID";
+	public static final String BOOK_TITLE = "book_Title";
+	public static final String BOOK_LANGUAGE = "language_idlanguage";
 }

@@ -11,7 +11,7 @@ import com.ontimize.jee.server.rest.ORestController;
 
 
 @RestController
-@RequestMapping("/books")
+@RequestMapping("/BOOKS")
 @ComponentScan(basePackageClasses={com.ontimize.bookstories.api.core.service.IBookService.class})
 public class BookRestController extends ORestController<IBookService> {
 

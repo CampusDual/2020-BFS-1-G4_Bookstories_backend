@@ -8,7 +8,8 @@ import com.ontimize.jee.server.dao.jdbc.OntimizeJdbcDaoSupport;
 @ConfigurationFile(configurationFile = "dao/AuthorDao.xml", configurationFilePlaceholder = "dao/placeholders.properties")
 public class AuthorDao extends OntimizeJdbcDaoSupport {
 	
-	public static final String ID = "authorID";
-	public static final String NAME = "authorName";
+	public static final String AUTHOR_ID = "author_ID";
+	public static final String AUTHOR_NAME = "author_Name";
+	
 
 }
