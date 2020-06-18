@@ -6,7 +6,6 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
-
 import com.ontimize.bookstories.api.core.service.IBookService;
 import com.ontimize.bookstories.model.core.dao.BookDao;
 import com.ontimize.db.EntityResult;
@@ -26,7 +25,9 @@ public class BookService implements IBookService {
 	public EntityResult bookQuery(Map<String, Object> keyMap, List<String> attrList) {
 		return this.daoHelper.query(bookDao, keyMap, attrList);
 	}
-
+	public EntityResult bookdetailsQuery(Map<String, Object> keyMap, List<String> attrList) {
+		return this.daoHelper.query(this.bookDao, keyMap, attrList, bookDao.QUERY_BOOK_DETAILS);
+	}
 	public EntityResult bookInsert(Map<String, Object> attrMap) {
 		return this.daoHelper.insert(bookDao, attrMap);
 	}

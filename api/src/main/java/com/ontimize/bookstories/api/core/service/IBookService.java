@@ -10,6 +10,7 @@ import com.ontimize.jee.common.exceptions.OntimizeJEERuntimeException;
 public interface IBookService {
 	//Book
 	 public EntityResult bookQuery(Map<String, Object> keyMap, List<String> attrList) throws OntimizeJEERuntimeException;
+	 public EntityResult bookdetailsQuery(Map<String, Object> keyMap, List<String> attrList) throws OntimizeJEERuntimeException;
 	 public EntityResult bookInsert(Map<String, Object> attrMap) throws OntimizeJEERuntimeException;
 	 public EntityResult bookUpdate(Map<String, Object> attrMap, Map<String, Object> keyMap) throws OntimizeJEERuntimeException;
 	 public EntityResult bookDelete(Map<String, Object> keyMap) throws OntimizeJEERuntimeException;

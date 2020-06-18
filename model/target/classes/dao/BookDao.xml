@@ -12,4 +12,24 @@
   <Column>book_id</Column>
  </UpdateKeys>
  <GeneratedKey>book_id</GeneratedKey>
+  <Queries>
+      <Query id="bookdetails">
+         <AmbiguousColumns>
+            <AmbiguousColumn name="BOOK_ID" prefix="BO" databaseName="BOOK_ID" />
+         </AmbiguousColumns>
+         <Sentence>
+            <![CDATA[
+               SELECT
+                  #COLUMNS#
+               FROM
+                  ${mainschema}.BOOKS AS BO
+                  INNER JOIN ${mainschema}.BOOKS_HAS_AUTHOR AS AU ON BO.BOOK_ID = AU.BOOKS_BOOK_ID
+                  INNER JOIN ${mainschema}.BOOKS_HAS_GENRES AS GE ON BO.BOOK_ID = GE.BOOKS_BOOK_ID
+                  INNER JOIN ${mainschema}.USERS AS U ON AU.AUTHOR_IDAUTHOR = U.USER_ID
+               #WHERE#
+               #ORDER#
+            ]]>
+         </Sentence>
+      </Query>
+   </Queries>
 </JdbcEntitySetup>
