@@ -9,7 +9,7 @@ import com.ontimize.bookstories.api.core.service.IAuthorService;
 import com.ontimize.jee.server.rest.ORestController;
 @RestController
 @RequestMapping("/AUTHORS")
-@ComponentScan(basePackageClasses = { com.ontimize.bookstories.api.core.service.IAuthorService.class })
+@ComponentScan(basePackageClasses ={com.ontimize.bookstories.api.core.service.IAuthorService.class })
 public class AuthorRestController extends ORestController<IAuthorService> {
 
 	 @Autowired

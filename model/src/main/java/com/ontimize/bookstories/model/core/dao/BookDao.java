@@ -17,4 +17,6 @@ public class BookDao extends OntimizeJdbcDaoSupport {
 	public static final String BOOK_TITLE = "book_Title";
 	public static final String BOOK_LANGUAGE = "language_idlanguage";
 	public static final String QUERY_BOOK_DETAILS = "bookdetails";
+	public static final String BOOK_AUTHORS = "bookauthors";
+	public static final String BOOK_REVIEWS = "bookreviews";
 }

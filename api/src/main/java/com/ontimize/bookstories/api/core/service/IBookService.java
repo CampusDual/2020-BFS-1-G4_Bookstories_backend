@@ -1,6 +1,4 @@
 package com.ontimize.bookstories.api.core.service;
-
-
 import java.util.List;
 import java.util.Map;
 import com.ontimize.db.EntityResult;
@@ -14,5 +12,7 @@ public interface IBookService {
 	 public EntityResult bookInsert(Map<String, Object> attrMap) throws OntimizeJEERuntimeException;
 	 public EntityResult bookUpdate(Map<String, Object> attrMap, Map<String, Object> keyMap) throws OntimizeJEERuntimeException;
 	 public EntityResult bookDelete(Map<String, Object> keyMap) throws OntimizeJEERuntimeException;
+	 public EntityResult bookauthorsQuery(Map<String, Object> keyMap, List<String> attrList) throws OntimizeJEERuntimeException;
+	 public EntityResult bookreviewsQuery(Map<String, Object> keyMap, List<String> attrList) throws OntimizeJEERuntimeException;
 
 }

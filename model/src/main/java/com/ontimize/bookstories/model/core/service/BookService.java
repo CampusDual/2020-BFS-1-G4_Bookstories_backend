@@ -40,5 +40,14 @@ public class BookService implements IBookService {
 	public EntityResult bookDelete(Map<String, Object> keyMap) {
 		return this.daoHelper.delete(this.bookDao, keyMap);
 	}
+	
+	@Override
+	public EntityResult bookauthorsQuery(Map<String, Object> keyMap, List<String> attrList) {
+		return this.daoHelper.query(this.bookDao, keyMap, attrList, bookDao.BOOK_AUTHORS);
+	}
+	@Override
+	public EntityResult bookreviewsQuery(Map<String, Object> keyMap, List<String> attrList) {
+		return this.daoHelper.query(this.bookDao, keyMap, attrList, bookDao.BOOK_REVIEWS);
+	}
 
 }

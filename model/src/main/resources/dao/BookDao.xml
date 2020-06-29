@@ -32,5 +32,32 @@
             ]]>
          </Sentence>
       </Query>
+      <Query id="bookreviews">
+         <Sentence>
+            <![CDATA[
+                SELECT
+                  #COLUMNS#
+               FROM
+                  ${mainschema}.BOOKS AS BO
+                  LEFT JOIN ${mainschema}.REVIEWS AS REV ON BO.BOOK_ID = REV.BOOKS_BOOK_ID
+                 #WHERE#
+               #ORDER#
+            ]]>
+         </Sentence>
+      </Query>
+            <Query id="bookauthors">
+         <Sentence>
+            <![CDATA[
+                SELECT
+                  #COLUMNS#
+               FROM
+                  ${mainschema}.BOOKS AS BO
+                  LEFT JOIN ${mainschema}.BOOKS_HAS_AUTHOR AS AU ON BO.BOOK_ID = AU.BOOKS_BOOK_ID
+                  LEFT JOIN ${mainschema}.AUTHOR AS U ON AU.AUTHOR_IDAUTHOR = U.ID_AUTHOR
+               #WHERE#
+               #ORDER#
+            ]]>
+         </Sentence>
+      </Query>
    </Queries>
 </JdbcEntitySetup>
