@@ -12,5 +12,6 @@ public interface IAuthorService {
 	 public EntityResult authorInsert(Map<String, Object> attrMap) throws OntimizeJEERuntimeException;
 	 public EntityResult authorUpdate(Map<String, Object> attrMap, Map<String, Object> keyMap) throws OntimizeJEERuntimeException;
 	 public EntityResult authorDelete(Map<String, Object> keyMap) throws OntimizeJEERuntimeException;
+	 public EntityResult authorbooksQuery(Map<String, Object> keyMap, List<String> attrList) throws OntimizeJEERuntimeException;
 
 }

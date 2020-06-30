@@ -11,4 +11,20 @@
   		<Column>id_author</Column>
  	</UpdateKeys>
  	 <GeneratedKey>id_author</GeneratedKey>
+ 	   <Queries>
+            <Query id="authorbooks">
+         <Sentence>
+            <![CDATA[
+                SELECT
+                  #COLUMNS#
+               FROM
+                  ${mainschema}.AUTHOR AS AU
+                  INNER JOIN ${mainschema}.BOOKS_HAS_AUTHOR BOA ON BOA.AUTHOR_IDAUTHOR = AU.ID_AUTHOR
+                  INNER JOIN ${mainschema}.BOOKS AS B ON BOA.BOOKS_BOOK_ID = B.BOOK_ID
+               #WHERE#
+               #ORDER#
+            ]]>
+         </Sentence>
+      </Query>
+   </Queries>
  	</JdbcEntitySetup>

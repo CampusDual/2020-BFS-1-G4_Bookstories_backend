@@ -10,5 +10,6 @@ public class AuthorDao extends OntimizeJdbcDaoSupport {
 	
 	public static final String AUTHOR_ID = "author_ID";
 	public static final String AUTHOR_NAME = "author_Name";
+	public static final String AUTHOR_BOOKS = "authorbooks";
 
 }
