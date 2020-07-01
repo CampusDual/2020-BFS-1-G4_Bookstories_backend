@@ -26,7 +26,7 @@ public class BookService implements IBookService {
 		return this.daoHelper.query(bookDao, keyMap, attrList);
 	}
 	public EntityResult bookdetailsQuery(Map<String, Object> keyMap, List<String> attrList) {
-		return this.daoHelper.query(this.bookDao, keyMap, attrList, bookDao.QUERY_BOOK_DETAILS);
+		return this.daoHelper.query(this.bookDao, keyMap, attrList, BookDao.QUERY_BOOK_DETAILS);
 	}
 	public EntityResult bookInsert(Map<String, Object> attrMap) {
 		return this.daoHelper.insert(bookDao, attrMap);
@@ -43,11 +43,11 @@ public class BookService implements IBookService {
 	
 	@Override
 	public EntityResult bookauthorsQuery(Map<String, Object> keyMap, List<String> attrList) {
-		return this.daoHelper.query(this.bookDao, keyMap, attrList, bookDao.BOOK_AUTHORS);
+		return this.daoHelper.query(this.bookDao, keyMap, attrList, BookDao.BOOK_AUTHORS);
 	}
 	@Override
 	public EntityResult bookreviewsQuery(Map<String, Object> keyMap, List<String> attrList) {
-		return this.daoHelper.query(this.bookDao, keyMap, attrList, bookDao.BOOK_REVIEWS);
+		return this.daoHelper.query(this.bookDao, keyMap, attrList, BookDao.BOOK_REVIEWS);
 	}
 
 }

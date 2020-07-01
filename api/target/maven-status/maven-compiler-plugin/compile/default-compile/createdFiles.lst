@@ -1,0 +1,3 @@
+com\ontimize\bookstories\api\core\service\IUserService.class
+com\ontimize\bookstories\api\core\service\IAuthorService.class
+com\ontimize\bookstories\api\core\service\IBookService.class

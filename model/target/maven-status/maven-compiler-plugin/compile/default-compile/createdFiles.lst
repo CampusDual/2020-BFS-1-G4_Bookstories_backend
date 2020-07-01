@@ -1,0 +1,7 @@
+com\ontimize\bookstories\model\core\dao\UserRoleDao.class
+com\ontimize\bookstories\model\core\dao\AuthorDao.class
+com\ontimize\bookstories\model\core\dao\UserDao.class
+com\ontimize\bookstories\model\core\service\AuthorService.class
+com\ontimize\bookstories\model\core\service\BookService.class
+com\ontimize\bookstories\model\core\service\UserService.class
+com\ontimize\bookstories\model\core\dao\BookDao.class
