@@ -13,6 +13,23 @@
  </UpdateKeys>
  <GeneratedKey>book_id</GeneratedKey>
   <Queries>
+  	<Query id="booksbase">
+         <AmbiguousColumns>
+            <AmbiguousColumn name="BOOK_ID" prefix="BO" databaseName="BOOK_ID" />
+         
+         </AmbiguousColumns>
+         <Sentence>
+            <![CDATA[
+               SELECT
+                  #COLUMNS#
+               FROM
+                  ${mainschema}.BOOKS AS BO
+                  LEFT  JOIN ${mainschema}.LANGUAGE AS L ON BO.LANGUAGE_IDLANGUAGE = L.IDLANGUAGE
+               #WHERE#
+               #ORDER#
+            ]]>
+         </Sentence>
+      </Query>
       <Query id="bookdetails">
          <AmbiguousColumns>
             <AmbiguousColumn name="BOOK_ID" prefix="BO" databaseName="BOOK_ID" />

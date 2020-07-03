@@ -21,9 +21,14 @@ public class BookService implements IBookService {
 
 	@Autowired
 	private DefaultOntimizeDaoHelper daoHelper;
-
+	
 	public EntityResult bookQuery(Map<String, Object> keyMap, List<String> attrList) {
 		return this.daoHelper.query(bookDao, keyMap, attrList);
+	}
+	
+	
+	public EntityResult booksbaseQuery(Map<String, Object> keyMap, List<String> attrList) {
+		return this.daoHelper.query(bookDao, keyMap, attrList,BookDao.QUERY_BOOK_BASE);
 	}
 	public EntityResult bookdetailsQuery(Map<String, Object> keyMap, List<String> attrList) {
 		return this.daoHelper.query(this.bookDao, keyMap, attrList, BookDao.QUERY_BOOK_DETAILS);
