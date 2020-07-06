@@ -23,8 +23,8 @@
                SELECT
                   #COLUMNS#
                FROM
-                  ${mainschema}.BOOKS AS BO
-                  LEFT  JOIN ${mainschema}.LANGUAGE AS L ON BO.LANGUAGE_IDLANGUAGE = L.IDLANGUAGE
+                  ${mainschema}.VBOOKS AS BO
+                  
                #WHERE#
                #ORDER#
             ]]>
