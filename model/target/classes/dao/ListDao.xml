@@ -14,6 +14,10 @@
  <GeneratedKey>LIST_ID</GeneratedKey>
   <Queries>
   	<Query id="lists">
+  	<AmbiguousColumns>
+  		<AmbiguousColumn name="LIST_ID" prefix="l" databaseName="LIST_ID" />
+  		<AmbiguousColumn name="TUSERS_USER" prefix="lou" databaseName="TUSERS_USER" />
+  	</AmbiguousColumns>
         
          <Sentence>
             <![CDATA[
@@ -22,7 +26,7 @@
                FROM
                   ${mainschema}.lists as l
                		inner join ${mainschema}.type_of_list as tol on tol.idtype_of_list = l.type_of_list_idtype_of_list 
-              		inner join ${mainschema}.list_of_user lou on lou.list_lib_id = l.list_id ;
+              		inner join ${mainschema}.list_of_user lou on lou.list_lib_id = l.list_id 
                   
                #WHERE#
                #ORDER#

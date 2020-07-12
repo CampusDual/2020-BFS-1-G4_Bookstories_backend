@@ -30,6 +30,11 @@ public class BookService implements IBookService {
 	public EntityResult booksbaseQuery(Map<String, Object> keyMap, List<String> attrList) {
 		return this.daoHelper.query(bookDao, keyMap, attrList,BookDao.QUERY_BOOK_BASE);
 	}
+	
+	public EntityResult booksoflistQuery(Map<String, Object> keyMap, List<String> attrList) {
+		return this.daoHelper.query(bookDao, keyMap, attrList,BookDao.QUERY_BOOK_OF_LIST);
+	}
+	
 	public EntityResult bookdetailsQuery(Map<String, Object> keyMap, List<String> attrList) {
 		return this.daoHelper.query(this.bookDao, keyMap, attrList, BookDao.QUERY_BOOK_DETAILS);
 	}
