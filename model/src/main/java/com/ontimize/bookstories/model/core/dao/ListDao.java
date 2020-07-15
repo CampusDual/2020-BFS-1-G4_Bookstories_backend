@@ -20,5 +20,6 @@ public class ListDao extends OntimizeJdbcDaoSupport {
 	public static final String LIST_DESCRIPCION = "lib_name";
 	public static final String LIST_TYPE = "idtype_of_list";
 	public static final String QUERY_LIST = "lists";
+
 	
 }

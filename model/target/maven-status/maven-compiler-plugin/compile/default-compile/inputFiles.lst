@@ -1,7 +1,12 @@
 C:\Users\pav_g\eclipse-workspace\bookstories\model\src\main\java\com\ontimize\bookstories\model\core\dao\UserRoleDao.java
+C:\Users\pav_g\eclipse-workspace\bookstories\model\src\main\java\com\ontimize\bookstories\model\core\service\ReviewService.java
+C:\Users\pav_g\eclipse-workspace\bookstories\model\src\main\java\com\ontimize\bookstories\model\core\service\ListService.java
 C:\Users\pav_g\eclipse-workspace\bookstories\model\src\main\java\com\ontimize\bookstories\model\core\dao\UserDao.java
 C:\Users\pav_g\eclipse-workspace\bookstories\model\src\main\java\com\ontimize\bookstories\model\core\dao\AuthorDao.java
+C:\Users\pav_g\eclipse-workspace\bookstories\model\src\main\java\com\ontimize\bookstories\model\core\dao\BookOfListsDao.java
 C:\Users\pav_g\eclipse-workspace\bookstories\model\src\main\java\com\ontimize\bookstories\model\core\dao\BookDao.java
+C:\Users\pav_g\eclipse-workspace\bookstories\model\src\main\java\com\ontimize\bookstories\model\core\dao\ListDao.java
+C:\Users\pav_g\eclipse-workspace\bookstories\model\src\main\java\com\ontimize\bookstories\model\core\dao\ReviewDao.java
 C:\Users\pav_g\eclipse-workspace\bookstories\model\src\main\java\com\ontimize\bookstories\model\core\service\AuthorService.java
 C:\Users\pav_g\eclipse-workspace\bookstories\model\src\main\java\com\ontimize\bookstories\model\core\service\UserService.java
 C:\Users\pav_g\eclipse-workspace\bookstories\model\src\main\java\com\ontimize\bookstories\model\core\service\BookService.java

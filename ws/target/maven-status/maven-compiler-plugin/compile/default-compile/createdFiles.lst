@@ -1,5 +1,5 @@
-com\ontimize\bookstories\ws\core\rest\AuthorRestController.class
 com\ontimize\bookstories\ws\core\rest\MainRestController.class
-com\ontimize\bookstories\ws\core\rest\TestRestController.class
 com\ontimize\bookstories\ws\core\rest\UserRestController.class
 com\ontimize\bookstories\ws\core\rest\BookRestController.class
+com\ontimize\bookstories\ws\core\rest\AuthorRestController.class
+com\ontimize\bookstories\ws\core\rest\TestRestController.class
